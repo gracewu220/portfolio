@@ -74,6 +74,9 @@ header{
 .navigation:hover{
     color:rgb(189, 167, 156); 
 }
+.fa {
+    color: rgba(86, 86, 86, 0.2);
+}
 /* need to check the below two lines of codes on a mobile phone*/
 @media screen and (max-width: 600px) {
     .nav-bar {float: none;}
@@ -84,9 +87,6 @@ header{
     }
 } */
 /*  */
-.fa {
-    color: rgba(86, 86, 86, 0.2);
-}
 /*********************************************************************
 
 
