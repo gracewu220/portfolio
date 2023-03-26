@@ -51,24 +51,25 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
-            background-color: rgba(118, 50, 63);
+            background-color: rgb(255,255,255);
+            border-top: 1.2px solid rgba(215, 206, 199, 0.5);
+            border-bottom: 1.2px solid rgba(215, 206, 199, 0.5);
         }
         .navigation {
-            float: left;
-            border-right: 1.2px solid rgba(215, 206, 199, 0.5);
+            float: right;
             display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 14px;
+            color:rgb(215, 206, 199);
             text-decoration: none;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: medium;
+            text-align: center;
+            padding: 14px 14px;
         }
         .navigation:active {
-            font-weight: bold;
+            color:rgb(215, 206, 199);
         }
         .navigation:hover{
-            background-color: rgb(91, 22, 34);
+            color:rgb(204, 185, 175);
         }
     </style>
 </head>
@@ -85,10 +86,11 @@
 
     <nav>
         <ul class="nav-bar">
-            <li><a class="navigation" href="../portfolio2/index.html">Home</a></li>
-            <li><a class="navigation" href="../portfolio2/resume.html">Resume</a></li>
-            <li><a class="navigation" href="#contact">Contact</a></li>
             <li><a class="navigation" href="#about">Blog</a></li>
+            <li><a class="navigation" href="#contact">Contact</a></li>
+            <li><a class="navigation" href="../portfolio2/resume.html">Resume</a></li>
+            <li><a class="navigation" href="../portfolio2/index.html">Home</a></li>
+
         </ul>
     </nav>
 
