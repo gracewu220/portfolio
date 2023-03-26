@@ -8,9 +8,16 @@
     <meta name="author" content="Wen-Ying Wu (Grace Wu)">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     
-    <title>Grace Wu</title>
+    <title>Grace Wu, Wen-Ying</title>
     <!-- <link rel="stylesheet" href="styles.css"> -->
     <style>
+/*********************************************************************
+
+
+                        	    Header
+
+
+**********************************************************************/
         header{
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             width: auto;
@@ -31,14 +38,14 @@
             margin-top: 1.2%;
             margin-bottom: 0%;
         }
-        .title-sub2{
+        /* .title-sub2{
             font-size: 10pt;
             font-weight: normal;
             font-style: italic;
             margin-top: 0%;
             margin-bottom: 0%;
             color: rgb(86, 86, 86);
-        }
+        } */
         .image-profile{
             display: block;
             overflow: hidden;
@@ -73,14 +80,60 @@
         .navigation:hover{
             color:rgb(189, 167, 156); 
         }
-        /* need to check this line of code on a mobile phone*/
+        /* need to check the below two lines of codes on a mobile phone*/
         @media screen and (max-width: 600px) {
             .nav-bar {float: none;}
         }
+        /* @media (min-width: 1200px) {
+            .container {
+                max-width: 1080px;
+            }
+        } */
+        /*  */
         .fa {
             color: rgba(86, 86, 86, 0.2);
         }
+/*********************************************************************
 
+
+                        	    Main
+
+
+**********************************************************************/
+        main{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width: auto;
+            text-align: center;
+            /* border-bottom: 1.2px solid rgba(215, 206, 199, 0.5); */
+            padding-top: 2pt;
+            padding-bottom: 2pt;
+            display: block;
+        }
+        .gis-column {
+            float: left;
+            width: 250pt;
+            margin-bottom: 16px;
+            padding: 0 8px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 12px;
+        }
+        .learn-more {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: rgb(118, 50, 63);
+            text-align: center;
+            cursor: pointer;
+            width: 120pt;
+        }
+        .learn-more:hover {
+            background-color: rgb(94, 30, 42);
+        }
+        img{
+            object-fit: contain;
+        }
     </style>
 </head>
 
@@ -89,7 +142,7 @@
         <div>
             <img class="image-profile" src="assets/images/headshots/headshot_grace.jpg">
             <p class="title">Grace Wu</p>
-            <p class="title-sub2">吳(Wu)玟瑩(Wen-Ying)</p>
+            <!-- <p class="title-sub2">吳(Wu)玟瑩(Wen-Ying)</p> -->
             <p class="title-sub1">political science, coding, and urban policies</p>
         </div>
     </header>
@@ -105,17 +158,60 @@
     </nav>
 
     <main>
-
+        <p style="font-size: 15pt; width: auto; display: block;">
+            Welcome to my portfolio. I am a second year masters student studying 
+            <strong><span style="color:rgb(118, 50, 63);">Environmental Policy and Planning
+            </span></strong>, based in <strong><span style="color:rgb(118, 50, 63);">
+            Greater Boston</span></strong>. I am trained to become a 
+            <strong><span style="color:rgb(118, 50, 63);">geospatial data analyst
+            </span></strong> with a passion to explore complex urban planning problems through 
+            maps and data, and I believe that the key to finding solutions lies in a combination 
+            between <strong><span style="color:rgb(118, 50, 63);">meticulous research 
+            methods</span></strong> and <strong><span style="color:rgb(118, 50, 63);">
+            creativity</span></strong>!
+        </p>
+        <h2>Skills</h2>
+        <p>
+            <li>&#x2022; <strong>Mapping</strong>: ArcMap, ArcGIS Suite, ENVI</li> 
+            <li>&#x2022; <strong>Visualization</strong>: Python, Tableau</li>
+            <li>&#x2022; <strong>Database</strong>: SQL, Excel</li>
+            <li>&#x2022; <strong>Statistics</strong>: Stata, R, NVivo</li>
+            <li>&#x2022; <strong>Web</strong>: HTML, CSS</li>
+            <li>&#x2022; <strong>Design</strong>: Adobe Illustrator, InDesign, SketchUp</li>
+        </p>
+        <h2>GIS Portfolio</h2>
+        <div class="gis-column">
+            <img src="/assets/projects/Addis/DevelopmentArea_Flood.jpg" alt="Addis Ababa" 
+            width="250" height="auto">
+            <p>Climate risks to informal settlements in Addis Ababa, Ethiopia.</p> 
+            <p><button class="learn-more">Learn more</button></p>
+        </div>
+        <div class="gis-column">
+            <img src="/assets/projects/IntroRS/classification.jpg" alt="Intro to Remote Sensing" 
+            width="250" height="auto">
+            <p>Land cover classification and vegetation indices of Moose Hill Wildlife Sanctuary, MA during fall and winter.</p> 
+            <p><button class="learn-more">Learn more</button></p>
+        </div>
+        <div class="gis-column">
+            <img src="/assets/projects/design/exercise2-1page.png" alt="Urban Design Exercise 2" 
+            width="250" height="auto">
+            <p>Retrofitting neighborhood at scale l"=300'.</p> 
+            <p><button class="learn-more">Learn more</button></p>
+        </div>
     </main>
 
-    <footer>
+    <!-- <footer>
         <div>
             <p>
                 <a href="https://github.com/gracewu220"><i class="fa fa-github fa-2x"></i></a>
                 <a href="https://www.linkedin.com/in/gracewu220/"><i class="fa fa-linkedin fa-2x"></i></a>
                 <a href="https://twitter.com/wu_grace012"><i class="fa fa-twitter fa-2x"></i></a>
             </p>
+            <p>
+                Copyright &copy; 2023, Wen-Ying Wu (Grace Wu)<br> 
+				Design: <a href="http://www.gettemplate.com" rel="designer">Initio by GetTemplate</a>
+            </p>
         </div>
-    </footer>
+    </footer> -->
 </body>
 </html>
