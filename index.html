@@ -7,7 +7,10 @@
     <meta name="keywords" content="HTML, CSS, JavaScript, geospatial analyst, urban planning">
     <meta name="author" content="Wen-Ying Wu (Grace Wu)">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     <title>Grace Wu, Wen-Ying</title>
     <!-- <link rel="stylesheet" href="styles.css"> -->
     <style>
@@ -55,6 +58,13 @@
             margin: 0 auto;
             border-radius: 50%;
         }
+/*********************************************************************
+
+
+                        	Navigation Bar
+
+
+**********************************************************************/
         .nav-bar {
             list-style-type: none;
             margin: 0;
@@ -107,15 +117,42 @@
             /* border-bottom: 1.2px solid rgba(215, 206, 199, 0.5); */
             padding-top: 2pt;
             padding-bottom: 2pt;
-            display: block;
         }
-        .gis-column {
+        /* .gis-column {
             float: left;
             width: 250pt;
+            height: fit-content;
             margin-bottom: 16px;
             padding: 0 8px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             margin: 12px;
+        } */
+        /* .gis-table{
+            display: table;
+            width: 100%;
+            table-layout: auto;
+        }
+        .gis-col{
+            display: table-cell;
+            padding: 16px;
+        } */
+        /* .gis-grid{
+            display: grid;
+            height: auto;
+            grid-template-columns: auto auto auto;
+            gap: 1px;
+            align-content: center;
+            text-align: center;
+            font-size: 16px;
+        }
+        .gis-cell{
+            max-width: 250px;
+            margin: auto;
+        } */
+        img{
+            width: 250px;
+            height: 140pt;
+            object-fit: scale-down;
         }
         .learn-more {
             border: none;
@@ -131,9 +168,7 @@
         .learn-more:hover {
             background-color: rgb(94, 30, 42);
         }
-        img{
-            object-fit: contain;
-        }
+
     </style>
 </head>
 
@@ -180,7 +215,7 @@
             <li>&#x2022; <strong>Design</strong>: Adobe Illustrator, InDesign, SketchUp</li>
         </p>
         <h2>GIS Portfolio</h2>
-        <div class="gis-column">
+        <!-- <div class="gis-column">
             <img src="/assets/projects/Addis/DevelopmentArea_Flood.jpg" alt="Addis Ababa" 
             width="250" height="auto">
             <p>Climate risks to informal settlements in Addis Ababa, Ethiopia.</p> 
@@ -189,7 +224,26 @@
         <div class="gis-column">
             <img src="/assets/projects/IntroRS/classification.jpg" alt="Intro to Remote Sensing" 
             width="250" height="auto">
-            <p>Land cover classification and vegetation indices of Moose Hill Wildlife Sanctuary, MA during fall and winter.</p> 
+            <p>Land cover classification and vegetation indices of Moose Hill Wildlife Sanctuary, 
+                MA during fall and winter.</p> 
+            <p><button class="learn-more">Learn more</button></p>
+        </div>
+        <div class="gis-column">
+            <img src="/assets/projects/AdvGIS/Waste_Facilities.jpg" alt="Urban Design Exercise 2" 
+            width="250" height="auto">
+            <p>Retrofitting neighborhood at scale l"=300'.</p> 
+            <p><button class="learn-more">Learn more</button></p>
+        </div>
+        <div class="gis-column">
+            <img src="/assets/projects/Palu/InundationDistance.jpg" alt="Urban Design Exercise 2" 
+            width="250" height="auto">
+            <p>Retrofitting neighborhood at scale l"=300'.</p> 
+            <p><button class="learn-more">Learn more</button></p>
+        </div>
+        <div class="gis-column">
+            <img src="/assets/projects/thesis/Watershed.jpg" alt="Urban Design Exercise 2" 
+            width="250" height="auto">
+            <p>Retrofitting neighborhood at scale l"=300'.</p> 
             <p><button class="learn-more">Learn more</button></p>
         </div>
         <div class="gis-column">
@@ -197,7 +251,126 @@
             width="250" height="auto">
             <p>Retrofitting neighborhood at scale l"=300'.</p> 
             <p><button class="learn-more">Learn more</button></p>
+        </div> -->
+
+
+
+        <!-- <div class="gis-table">
+            <div class="gis-col">
+                <img src="/assets/projects/Addis/DevelopmentArea_Flood.jpg">
+                <p>Climate risks to informal settlements in Addis Ababa, Ethiopia.</p> 
+                <p><button class="learn-more">Learn more</button></p>
+            </div>
+            <div class="gis-col">
+                <img src="/assets/projects/IntroRS/classification.jpg">
+                <p>Land cover classification and vegetation indices of Moose Hill Wildlife Sanctuary, 
+                    MA during fall and winter.</p> 
+                <p><button class="learn-more">Learn more</button></p>
+            </div>
+            <div class="gis-col">
+                <img src="/assets/projects/AdvGIS/Waste_Facilities.jpg">
+                <p>Retrofitting neighborhood at scale l"=300'.</p> 
+                <p><button class="learn-more">Learn more</button></p>
+            </div>
+            <div class="gis-col">
+                <img src="/assets/projects/Palu/InundationDistance.jpg">
+                <p>Retrofitting neighborhood at scale l"=300'.</p> 
+                <p><button class="learn-more">Learn more</button></p>
+            </div>
+            <div class="gis-col">
+                <img src="/assets/projects/thesis/Watershed.jpg">
+                <p>Retrofitting neighborhood at scale l"=300'.</p> 
+                <p><button class="learn-more">Learn more</button></p>
+            </div>
+            <div class="gis-col">
+                <img src="/assets/projects/design/exercise2-1page.png">
+                <p>Retrofitting neighborhood at scale l"=300'.</p> 
+                <p><button class="learn-more">Learn more</button></p>
+            </div>
+        </div> -->
+
+
+
+        <!-- <div class="gis-grid">
+            <div class="gis-cell">
+                <img src="/assets/projects/Addis/DevelopmentArea_Flood.jpg">
+                <p>Climate risks to informal settlements in Addis Ababa, Ethiopia.</p> 
+                <p><button class="learn-more">Learn more</button></p>
+            </div>
+            <div class="gis-cell">
+                <img src="/assets/projects/IntroRS/classification.jpg">
+                <p>Land cover classification and vegetation indices of Moose Hill Wildlife Sanctuary, 
+                    MA during fall and winter.</p> 
+                <p><button class="learn-more">Learn more</button></p>
+            </div>
+            <div class="gis-cell">
+                <img src="/assets/projects/AdvGIS/Waste_Facilities.jpg">
+                <p>Retrofitting neighborhood at scale l"=300'.</p> 
+                <p><button class="learn-more">Learn more</button></p>
+            </div>
+            <div class="gis-cell">
+                <img src="/assets/projects/Palu/InundationDistance.jpg">
+                <p>Retrofitting neighborhood at scale l"=300'.</p> 
+                <p><button class="learn-more">Learn more</button></p>
+            </div>
+            <div class="gis-cell">
+                <img src="/assets/projects/thesis/Watershed.jpg">
+                <p>Retrofitting neighborhood at scale l"=300'.</p> 
+                <p><button class="learn-more">Learn more</button></p>
+            </div>
+            <div class="gis-cell">
+                <img src="/assets/projects/design/exercise2-1page.png">
+                <p>Retrofitting neighborhood at scale l"=300'.</p> 
+                <p><button class="learn-more">Learn more</button></p>
+            </div>
+        </div> -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="/assets/projects/Addis/DevelopmentArea_Flood.jpg">
+                    <p>Climate risks to informal settlements in Addis Ababa, Ethiopia.</p> 
+                    <p><button class="learn-more">Learn more</button></p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="/assets/projects/IntroRS/classification.jpg">
+                    <p>Land cover classification and vegetation indices of Moose Hill Wildlife Sanctuary, 
+                        MA during fall and winter.</p> 
+                    <p><button class="learn-more">Learn more</button></p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="/assets/projects/AdvGIS/Waste_Facilities.jpg">
+                    <p>Retrofitting neighborhood at scale l"=300'.</p> 
+                    <p><button class="learn-more">Learn more</button></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="/assets/projects/Palu/InundationDistance.jpg">
+                    <p>Retrofitting neighborhood at scale l"=300'.</p> 
+                    <p><button class="learn-more">Learn more</button></p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="/assets/projects/thesis/Watershed.jpg">
+                    <p>Retrofitting neighborhood at scale l"=300'.</p> 
+                    <p><button class="learn-more">Learn more</button></p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="/assets/projects/design/exercise2-1page.png">
+                    <p>Retrofitting neighborhood at scale l"=300'.</p> 
+                    <p><button class="learn-more">Learn more</button></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                </div>
+                <div class="col-sm-4">
+                </div>
+                <div class="col-sm-4">
+                </div>
+            </div>
         </div>
+
     </main>
 
     <!-- <footer>
