@@ -1,9 +1,12 @@
 /*********************************************************************
-                            Color Scheme
+                        Color Scheme - Index
                     Grain #D7CEC7, rgb(215, 206, 199)
                     Blackboard #565656, rgb(86, 86, 86)
                     Oxblood #76323F, rgb(118, 50, 63)
                     Tan #C09F80, rgb(192, 159, 128)
+                        Color Scheme - Resume
+                    Tuft blue rgb(62, 142, 222)
+                    UMN maroon rgb(122, 0, 25)
 **********************************************************************/
 /*********************************************************************
                         	    Header
@@ -123,9 +126,10 @@ img{
 footer{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     width: auto;
+    font-size: 10pt;
     text-align: center;
     background-color: rgba(215, 206, 199, 0.5);
-    padding-top: 2%;
-    padding-bottom: 1.5%;
+    padding-top: 20pt;
+    padding-bottom: 12pt;
     margin-top: 2%;
 }
