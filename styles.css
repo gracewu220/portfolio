@@ -81,7 +81,7 @@ header{
 @media screen and (max-width: 600px) {
     .nav-bar{float: none;}
     .contact{max-width: 1080px;}
-    .contact-form{margin-left: 5%; margin-right: 5%;}
+    .contact-form{margin: 0%}
 }
 /*********************************************************************
                         Footer
