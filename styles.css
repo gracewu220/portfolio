@@ -79,14 +79,10 @@ header{
 }
 /* need to check the below two lines of codes on a mobile phone*/
 @media screen and (max-width: 600px) {
-    .nav-bar {float: none;}
+    .nav-bar{float: none;}
+    .contact{max-width: 1080px;}
+    .contact-form{width: 65%; margin-left: 5%; margin-right: 5%;}
 }
-/* @media (min-width: 1200px) {
-    .container {
-        max-width: 1080px;
-    }
-} */
-/*  */
 /*********************************************************************
                         Footer
 **********************************************************************/
