@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="contact-validation.js" type="text/javascript"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -31,24 +32,24 @@
             <li><a class="navigation" href="index.html">Home</a></li>
         </ul>
     </nav><br>
-    <body class="contact-form">
-        <p style="margin-left: 10%;">
+    <body class="contact-form" id="contact-form">
+        <p style="margin-left: 20%; margin-right: 20%;">
             Contact me through LinkedIn or github, or leave me a message below :)
         </p>
         <div class="contact-container">
-          <form action="/action_page.php">
-            <label>First Name</label>
-            <input type="text" placeholder="e.g. Jane">
-            <label>Last Name</label>
-            <input type="text" placeholder="e.g. Doe">
-            <label>Email</label>
-            <input type="text" placeholder="e.g. name@company.com">
-            <label>Subject</label>
-            <input type="text" placeholder="e.g. Hello from your name">
-            <label>What would you like to discuss?</label>
-            <textarea style="height:200px" placeholder="Write your message here..."></textarea>
-            <input type="submit" value="Submit">
-          </form>
+            <form action="/action_page.php">
+                <label>First Name</label>
+                <input type="text" name="first name" id="fname" placeholder="e.g. Jane">
+                <label>Last Name</label>
+                <input type="text" name="last name" id="lname" placeholder="e.g. Doe">
+                <label>Email</label>
+                <input type="text" name="email" id="email" placeholder="e.g. name@company.com">
+                <label>Subject</label>
+                <input type="text" name="subject" id="subject" placeholder="e.g. Hello from your name">
+                <label>What would you like to discuss?</label>
+                <textarea style="height:200px" name="message" id="message" placeholder="Write your message here..."></textarea>
+                <input type="submit" name="submit" value="Submit">
+            </form>
         </div>
     <footer>
         <div>
