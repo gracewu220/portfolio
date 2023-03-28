@@ -113,25 +113,6 @@ main{
 /*********************************************************************
                         Gallary
 **********************************************************************/
-/* @import url('https://fonts.googleapis.com/css?family=Inconsolata|Merriweather');
-
-$body: 'Inconsolata', monospace;
-$big: 'Merriweather', serif;
-$white: #ffffff;
-$primary: #F2DAD7;
-$secondary: #D1A39E;
-$light: #CECDCA;
-$dark: #474545;
-$ease: all 0.3s ease-in-out; */
-/* body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 0;
-} */
-/* $white: #ffffff;
-$primary: #F2DAD7;
-$secondary: #D1A39E;
-$light: #CECDCA;
-$dark: #474545; */
 button{
     cursor: pointer;
 }
@@ -162,7 +143,9 @@ button{
 .gallary-image{
     position: absolute;
     opacity: 0.9;
-    object-fit:contain;
+    width: 200%;
+    height: 100%;
+    object-fit: cover;
 }
 .gallary-title{
     /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
