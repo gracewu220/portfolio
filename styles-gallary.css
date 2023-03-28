@@ -1,0 +1,260 @@
+/*********************************************************************
+                        Color Scheme - Index
+                    Grain #D7CEC7, rgb(215, 206, 199)
+                    Blackboard #565656, rgb(86, 86, 86)
+                    Oxblood #76323F, rgb(118, 50, 63)
+                    Tan #C09F80, rgb(192, 159, 128)
+                        Color Scheme - Resume
+                    Tuft blue rgb(62, 142, 222)
+                    UMN maroon rgb(122, 0, 25)
+**********************************************************************/
+/*********************************************************************
+                        	    Header
+**********************************************************************/
+header{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: auto;
+    height: 220pt;
+    text-align: center;
+    background-color: rgba(215, 206, 199, 0.3);
+    padding-top: 20pt;
+    padding-bottom: 20pt;
+}
+.title{
+    font-size: 35pt;
+    font-weight: bold;
+    margin-bottom: 0pt;
+    margin-top: 2pt;
+}
+.title-sub1{
+    font-size: 14pt;
+    font-weight: normal;
+    margin-top: 3pt;
+    margin-bottom: 0pt;
+}
+.title-sub2{
+    font-size: 11pt;
+    font-weight: normal;
+    font-style: italic;
+    margin-top: 0pt;
+    margin-bottom: 0pt;
+    color: rgb(86, 86, 86);
+}
+.image-profile{
+    display: block;
+    overflow: hidden;
+    width: 120px;
+    height: 120px;
+    border: 8px solid rgba(215, 206, 199, 0.5);
+    margin: 0 auto;
+    border-radius: 50%;
+}
+/*********************************************************************
+                    Navigation Bar
+**********************************************************************/
+.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(255,255,255);
+    border-top: 1.2px solid rgba(215, 206, 199, 0.5);
+    border-bottom: 1.2px solid rgba(215, 206, 199, 0.5);
+}
+.navigation {
+    float: right;
+    display: block;
+    color:rgb(204, 185, 175);
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    text-align: center;
+    padding: 14px 14px;
+}
+.navigation:active {
+    color:rgb(118, 50, 63);
+}
+.navigation:hover{
+    color:rgb(189, 167, 156); 
+}
+/* need to check the below two lines of codes on a mobile phone*/
+@media screen and (max-width: 600px) {
+    .nav-bar{float: none;}
+    .contact{max-width: 1080px;}
+    .contact-form{margin: 0%}
+}
+/*********************************************************************
+                        Footer
+**********************************************************************/
+.fa {
+    color: rgba(86, 86, 86, 0.3);
+}
+footer{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: auto;
+    font-size: 10pt;
+    text-align: center;
+    background-color: rgba(215, 206, 199, 0.5);
+    padding-top: 20pt;
+    padding-bottom: 12pt;
+    margin-top: 2%;
+}
+/*********************************************************************
+                        Main
+**********************************************************************/
+main{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: auto;
+    text-align: center;
+    /* border-bottom: 1.2px solid rgba(215, 206, 199, 0.5); */
+    padding-top: 2pt;
+    padding-bottom: 2pt;
+}
+/*********************************************************************
+                        Gallary
+**********************************************************************/
+/* @import url('https://fonts.googleapis.com/css?family=Inconsolata|Merriweather');
+
+$body: 'Inconsolata', monospace;
+$big: 'Merriweather', serif;
+$white: #ffffff;
+$primary: #F2DAD7;
+$secondary: #D1A39E;
+$light: #CECDCA;
+$dark: #474545;
+$ease: all 0.3s ease-in-out; */
+/* body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+} */
+/* $white: #ffffff;
+$primary: #F2DAD7;
+$secondary: #D1A39E;
+$light: #CECDCA;
+$dark: #474545; */
+button{
+    cursor: pointer;
+}
+#gallary{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(255,255,255);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2px;
+}
+.gallary-grid{
+    position: relative;
+    background: #F2DAD7;
+    overflow: hidden;
+}
+.gallary-text{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    padding: 1em 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    z-index: 3;
+}
+.gallary-image{
+    position: absolute;
+    opacity: 0.9;
+    object-fit:contain;
+}
+.gallary-title{
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    bottom: 0;
+    font-weight: 100;
+    font-size: 0.8em;
+    z-index: 3;
+    text-transform: uppercase;
+    color: #474545;
+    letter-spacing: 2px;
+  }
+.gallary-overlay{
+    background: #F2DAD7;
+    height: 100%;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    position: relative;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    transform: translateY(101%);
+    transition: all 0.3s ease-in-out;
+}
+.gallary-grid:hover
+.gallary-overlay{
+    transform: translateY(0%);
+}
+.gallary-grid.p{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    padding: 1em 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    z-index: 3;
+}
+button{
+    background: none;
+    outline: none;
+    font-weight: 100;
+    letter-spacing: 2px;
+    border: 1px solid rgb(255,255,255);
+    color: rgb(255,255,255);
+    text-transform: uppercase;
+    padding: 10px;
+}
+button:hover{
+    transition: all 0.3s ease-in-out;
+    background: rgb(255,255,255);
+    color: #D1A39E;
+    transform: scale(1.05);
+}
+.overlay{
+    position: fixed;
+    background: rgba(86, 86, 86, 0.7);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    z-index: 3;
+}
+.overlay.open{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.overlay__inner{
+    background: rgba(118, 50, 63, 0.9);
+    width: 700px;
+    padding: 20px;
+    position: relative;
+    opacity: 1;
+}
+.close{
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    background: none;
+    outline: 0;
+    color: rgb(86, 86, 86);
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.close:hover{
+    color: #D1A39E;
+}
+.gallary-image{
+    margin-left: -50%;
+}
