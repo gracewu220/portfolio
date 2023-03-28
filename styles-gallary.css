@@ -128,7 +128,7 @@ button{
 }
 .gallary-grid{
     position: relative;
-    background: #F2DAD7;
+    background: rgba(215, 206, 199, 0.3);
     overflow: hidden;
 }
 .gallary-text{
@@ -162,7 +162,7 @@ button{
     letter-spacing: 2px;
   }
 .gallary-overlay{
-    background: #F2DAD7;
+    background: rgba(215, 206, 199);
     height: 100%;
     grid-column: 1 / -1;
     grid-row: 1 / -1;
@@ -198,8 +198,8 @@ button{
 }
 button:hover{
     transition: all 0.3s ease-in-out;
-    background: rgb(255,255,255);
-    color: #D1A39E;
+    background: rgba(255,255,255,0.85);
+    color: rgb(189, 167, 156);
     transform: scale(1.05);
 }
 .overlay{
