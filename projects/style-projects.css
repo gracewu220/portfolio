@@ -78,11 +78,11 @@ header{
     color:rgb(189, 167, 156); 
 }
 /* need to check the below two lines of codes on a mobile phone*/
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     .nav-bar{float: none;}
     .contact{max-width: 1080px;}
     .contact-form{margin: 0%}
-}
+} */
 /*********************************************************************
                         Footer
 **********************************************************************/
