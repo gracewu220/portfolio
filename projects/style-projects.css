@@ -22,15 +22,14 @@ main{
 /*********************************************************************
                         Slideshow
 **********************************************************************/
-*{
+/* *{
     box-sizing: border-box;
-    scrollbar-color: transparent transparent; /* thumb and track color */
+    scrollbar-color: transparent transparent;
     scrollbar-width: 0px;
 }
 .carousel{
     position: relative;
     padding-top: 75%;
-    /* filter: drop-shadow(0 0 10px #0003); */
     perspective: 100px;
 }
 .carousel__viewport{
@@ -51,11 +50,8 @@ main{
     position: relative;
     flex: 0 0 100%;
     width: 100%;
-    background-color: #f99;
+    background-color: transparent;
     counter-increment: item;
-}
-.carousel__slide:nth-child(even) {
-    background-color: #99f;
 }
 .carousel__slide:before {
     content: counter(item);
@@ -65,14 +61,6 @@ main{
     transform: translate3d(-50%,-40%,70px);
     color: #fff;
     font-size: 2em;
-}
-.carousel__snapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    scroll-snap-align: center;
 }
 @media (hover: hover) {
     .carousel__snapper {
@@ -109,41 +97,21 @@ main{
     display: inline-block;
     width: 1.5rem;
     height: 1.5rem;
-    background-color: rgba(215, 206, 199);
     background-clip: content-box;
     border: 0.25rem solid transparent;
     border-radius: 50%;
     font-size: 0;
     transition: transform 0.1s;
 }
-.carousel__navigation-button:hover{
+.carousel__navigation-button-color{
+    background-color: rgba(215, 206, 199);
+}
+.carousel__navigation-button-color:hover,
+.carousel__navigation-button-color:active,
+.carousel__navigation-button-color:focus{
     background-color: rgb(189, 167, 156)
-}
-.carousel__navigation-button:activate{
-    background-color: rgb(189, 167, 156)
-}
-.carousel::before,
-.carousel::after,
-.carousel__prev,
-.carousel__next{
-    position: absolute;
-    top: 0;
-    margin-top: 37.5%;
-    width: 4rem;
-    height: 4rem;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    font-size: 0;
-    outline: 0;
-}
-.carousel::before,
-.carousel__prev{
-    left: -1rem;
-}
-.carousel::after,
-.carousel__next{
-    right: -1rem;
-}
+} */
+
 /*********************************************************************
                         	    Header
 **********************************************************************/
