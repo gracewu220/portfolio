@@ -14,7 +14,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="contact-validation.js" type="text/javascript"></script>
     <link rel="stylesheet" href="../style-projects.css">
-    <link rel="stylesheet" href="../style-projects.js">
 </head>
 <body>
     <header style="height: 95pt;">
@@ -31,56 +30,30 @@
         </ul>
     </nav><br>
     <main>
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="Wetland Type.jpg" style="width:100%">
-                <!-- <div class="text">Caption Text</div> -->
-            </div>
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="Waste_Facilities.jpg" style="width:100%">
-                <!-- <div class="text">Caption Two</div> -->
-            </div>
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="Land Use.jpg" style="width:100%">
-                <!-- <div class="text">Caption Three</div> -->
-            </div>
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-        </div>
-        <br>
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
-        <script>
-            let slideIndex = 1;
-            showSlides(slideIndex);
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}    
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-        }
-        </script>
+        <section class="carousel">
+            <ol class="carousel__viewport">
+                <img id="carousel__slide1" class="carousel__slide" src="UEP235_Poster.jpg" style="max-width: 500pt;" >
+                <img id="carousel__slide2" class="carousel__slide" src="Hydrologic_Soil_Group.jpg" style="max-width: 500pt;" >
+                <img id="carousel__slide3" class="carousel__slide" src="Waste_Facilities_wetlands.png" style="max-width: 500pt;" >
+                <img id="carousel__slide4" class="carousel__slide" src="Gamma09_2.png" style="max-width: 500pt;" >
+            </ol>
+        <aside class="carousel__navigation">
+            <ol class="carousel__navigation-list">
+                <li class="carousel__navigation-item">
+                    <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
+                </li>
+                <li class="carousel__navigation-item">
+                    <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
+                </li>
+                <li class="carousel__navigation-item">
+                    <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
+                </li>
+                <li class="carousel__navigation-item">
+                    <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>
+                </li>
+            </ol>
+        </aside>
+        </section>
 
     </main>
     <footer>
@@ -92,7 +65,7 @@
             </p>
             <p>
                 Copyright &copy; 2023, Wen-Ying Wu (Grace Wu)<br> 
-                Reference: <u><a href="https://www.w3schools.com/" target="_blank">w3schools</a></u><br>
+                Reference: <u><a href="https://codemyui.com/css-only-content-slider/" target="_blank">CodeMyUI</a></u><br>
                 <em>Last updated on 4/16/23</em>
             </p>
         </div>
