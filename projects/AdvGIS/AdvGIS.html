@@ -14,6 +14,19 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="contact-validation.js" type="text/javascript"></script>
     <link rel="stylesheet" href="../style-projects.css">
+    <!-- <link rel="stylesheet" href="../style-projects.js"> -->
+    <!-- Slideshow -->
+    <link rel="stylesheet" href="/carousel-lazy-loading-square/square1.min.css" />
+    <script src="/carousel-lazy-loading-square/square1.min.js"></script>
+    <script src="/carousel-lazy-loading-square/square1.js"></script>
+    <style>
+        [class*="slideshow"] {
+        max-width: 600px;
+        height: 450px;
+        margin: 0 auto 40px;
+        outline: none;
+        }
+    </style>
 </head>
 <body>
     <header style="height: 95pt;">
@@ -30,30 +43,46 @@
         </ul>
     </nav><br>
     <main>
-        <section class="carousel">
-            <ol class="carousel__viewport">
-                <img id="carousel__slide1" class="carousel__slide" src="UEP235_Poster.jpg" style="max-width: 500pt;" >
-                <img id="carousel__slide2" class="carousel__slide" src="Hydrologic_Soil_Group.jpg" style="max-width: 500pt;" >
-                <img id="carousel__slide3" class="carousel__slide" src="Waste_Facilities_wetlands.png" style="max-width: 500pt;" >
-                <img id="carousel__slide4" class="carousel__slide" src="Gamma09_2.png" style="max-width: 500pt;" >
-            </ol>
-            <aside class="carousel__navigation">
-                <ol class="carousel__navigation-list">
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
-                    </li>
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
-                    </li>
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
-                    </li>
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>
-                    </li>
-                </ol>
-            </aside>
-        </section>
+        <div class="container">
+            <div class="slideshow example-2">
+                <div><img src="UEP235_Poster.jpg" class="slideshow-image-pos"></div>
+                <div><img src="Hydrologic_Soil_Group.jpg" class="slideshow-image-pos"></div>
+                <div><img src="Waste_Facilities_wetlands.png" class="slideshow-image-pos"></div>
+                <div><img src="Gamma09_2.png" class="slideshow-image-pos"></div>
+            </div>
+            <script src="/carousel-lazy-loading-square/square1.js"></script>
+            <script>
+                $('.example-2').square1({
+                    animation: 'slide',
+                    fill_mode: "contain"
+                });
+            </script>
+            <script type="text/javascript">
+                var _gaq = _gaq || [];
+                _gaq.push(['_setAccount', 'UA-36251023-1']);
+                _gaq.push(['_setDomainName', 'jqueryscript.net']);
+                _gaq.push(['_trackPageview']);
+                (function() {
+                    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                })();
+            </script>
+            <script>
+                try {
+                fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+                    return true;
+                }).catch(function(e) {
+                    var carbonScript = document.createElement("script");
+                    carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+                    carbonScript.id = "_carbonads_js";
+                    document.getElementById("carbon-block").appendChild(carbonScript);
+                });
+                } catch (error) {
+                console.log(error);
+                }
+            </script>
+        </div>
     </main>
     <footer>
         <div>
@@ -64,7 +93,7 @@
             </p>
             <p>
                 Copyright &copy; 2023, Wen-Ying Wu (Grace Wu)<br> 
-                Reference: <u><a href="https://codemyui.com/css-only-content-slider/" target="_blank">CodeMyUI</a></u><br>
+                Reference: <u><a href="https://github.com/thomhines/square1" target="_blank">thomhines/square1</a></u><br>
                 <em>Last updated on 4/16/23</em>
             </p>
         </div>
