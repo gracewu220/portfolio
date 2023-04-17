@@ -109,12 +109,18 @@ main{
     display: inline-block;
     width: 1.5rem;
     height: 1.5rem;
-    background-color: #333;
+    background-color: rgba(215, 206, 199);
     background-clip: content-box;
     border: 0.25rem solid transparent;
     border-radius: 50%;
     font-size: 0;
     transition: transform 0.1s;
+}
+.carousel__navigation-button:hover{
+    background-color: rgb(189, 167, 156)
+}
+.carousel__navigation-button:activate{
+    background-color: rgb(189, 167, 156)
 }
 .carousel::before,
 .carousel::after,
